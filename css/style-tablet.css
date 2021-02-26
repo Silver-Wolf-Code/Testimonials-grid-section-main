@@ -1,0 +1,30 @@
+.main {
+  margin: 72px 60px;
+}
+
+.main__section {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 3rem;
+}
+
+.main__card {
+  min-width: 328px;
+  max-width: 440px;
+
+}
+
+.main__card--one {
+  background-position: top right 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__card--one {
+  grid-row: 1/3;
+}
+
+.main__card--four {
+  display: flex;
+  flex-direction: column;
+}

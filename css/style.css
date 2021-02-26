@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-bg-card-one: #7541c8;
+  --color-bg-card-two: #48556a;
+  --color-bg-card-three: #ffffff;
+  --color-bg-card-four: #19212e;
+  --color-bg: #ecf2f8;
+  --color: #cfcfcf;
+}
+
+.main {
+  margin: 72px 24px 40px 24px;
+}
+
+.main__section {
+  display: grid;
+  gap: 3.5rem;
+  justify-content: center;
+}
+
+.main__card {
+  background: var(--color-bg-card-one);
+  border-radius: 8px;
+  padding: 24px 32px;
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 1.5rem;
+  transition: all .3s;
+}
+
+.main__card:hover {
+  transform: scale(1.02);
+  box-shadow: 20px 40px 60px -20px rgb(0 0 0 / 5%);
+}
+
+.main__top {
+  display: grid;
+  grid-template-columns: min-content auto;
+  column-gap: 2rem;
+}
+
+.figure {
+  background: #000;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: 2px solid #A47BE1;
+  overflow: hidden;
+}
+
+.figure--mod {
+  border: none;
+}
+
+.main__image {
+  width: 100%;
+}
+
+.main__name {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.main__desc {
+  color: rgb(255, 255, 255, .5);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.main__title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.main__copy {
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+.main__card--one {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: top right 10%;
+  background-repeat: no-repeat;
+}
+
+.main__card--one:hover {
+  background-color: rgb(117 65 200 / 95%)
+}
+
+.main__card--two {
+  background: var(--color-bg-card-two);
+}
+
+.main__card--two:hover {
+  background-color: rgb(72 85 106 / 95%)
+}
+
+.main__card--three {
+  background: var(--color-bg-card-three);
+  box-shadow: rgba(0, 0, 0, 0.1) 20px 40px 60px -20px;
+}
+
+.main__name--mod {
+  color: var(--color-bg-card-four);
+}
+
+.main__desc--mod {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main__title--mod {
+  color: var(--color-bg-card-four);
+}
+
+.main__copy--mod {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main__card--four {
+  background: var(--color-bg-card-four);
+}
+
+.main__card--four:hover {
+  background-color: rgb(25 33 46 / 95%)
+}
+
+.main__card--five {
+  background: var(--color-bg-card-three);
+  box-shadow: rgba(0, 0, 0, 0.1) 20px 40px 60px -20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
